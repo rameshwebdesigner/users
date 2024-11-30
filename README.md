@@ -43,7 +43,8 @@ A React-based application that displays a list of products fetched from an API, 
 
 1. Clone the repository:
    ```bash
-
+     git clone https://github.com/rameshwebdesigner/users.git
+     cd users
    ```
 2. Install dependencies:
 
