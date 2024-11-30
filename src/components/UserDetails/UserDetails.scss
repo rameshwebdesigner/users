@@ -1,0 +1,82 @@
+/* Modal background */
+.modal-overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 3;
+}
+
+/* Modal content */
+.modal {
+     background: #fff;
+     padding: 20px;
+     border-radius: 8px;
+     max-width: 400px;
+     width: 600px;
+     min-height: 300px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+     .body {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+     }
+
+     .footer {
+          text-align: right;
+     }
+}
+
+/* Close button */
+.close-btn {
+     background: #ff5e57;
+     color: #fff;
+     border: none;
+     padding: 10px 15px;
+     border-radius: 5px;
+     cursor: pointer;
+}
+
+.close-btn:hover {
+     background: #e54b4b;
+}
+
+/* Show modal */
+.modal-overlay.show {
+     display: flex;
+}
+
+/* Loader styles */
+.loader {
+     width: 50px;
+     height: 50px;
+     border: 5px solid #f3f3f3;
+     /* Light gray */
+     border-top: 5px solid #3498db;
+     /* Blue */
+     border-radius: 50%;
+     animation: spin 1s linear infinite;
+     margin: auto;
+
+     &-ctn {
+          min-height: 300px;
+          align-content: center;
+     }
+}
+
+/* Spin animation */
+@keyframes spin {
+     0% {
+          transform: rotate(0deg);
+     }
+
+     100% {
+          transform: rotate(360deg);
+     }
+}

@@ -1,0 +1,17 @@
+@import url(./components/NoDataFound/NoDataFound.scss);
+@import url(./components/UserDetails/UserDetails.scss);
+@import url(./components/Header/Header.scss);
+@import url(./components/User/User.scss);
+@import url(./components/UsersList/UserList.scss);
+
+#root,
+body {
+     height: 100dvh;
+}
+
+.users-container {
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+
+}

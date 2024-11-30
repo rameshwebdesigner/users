@@ -1,0 +1,1 @@
+export const USERS_API_ENDPOINT = "https://dummyjson.com/users";
