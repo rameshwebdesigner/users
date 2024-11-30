@@ -5,7 +5,7 @@ const UserDetails = ({ userDetailsId, onClose }) => {
      const [userInfo, setUserInfo] = useState(null);
      useEffect(() => {
           fetchData();
-     }, [])
+     })
      const fetchData = async () => {
           try {
                const response = await fetch(USERS_API_ENDPOINT + "/" + userDetailsId);
